@@ -1,0 +1,16 @@
+Install globally or in the project (dev) Typescript
+
+run
+    tsc --init
+it will generate tsconfig.json
+
+in that file we have to specify of the compiler will work. We can see
+    target: specify the JS version. When we compile, in which version of JS the output will be
+    module: sistem of module: common js with require or ES5 with import
+    strict: rigorous settings for typization
+    outdir: the folder where put the compiled files
+    lid: specify a libraries set to insert in the final compilation
+
+to compile a file from ts to js, for example app.ts, we will run
+    tsc app.ts
+it will generate a js file with our code compiled
