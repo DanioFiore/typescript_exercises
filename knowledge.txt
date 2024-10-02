@@ -1,0 +1,62 @@
+TS, if we don't pass a type, will assign a type automatically by recognize what value is assigned (Inference)
+TS data types:
+    Boolean:
+        let is_admin: boolean = true;
+    Number:
+        let score: number = 100;
+    String:
+        let user: string = 'Danio';
+    Array:
+        Ex array of strings
+        let users: string[] = ["Hello", "Ciao"];
+    Tuple:
+        Allows to manage arrays with types and total elements fixed
+        let person: [string, number] = ["Danio", 28];
+    Enum:
+        Allows to define set of nominal constant
+        enum Direction {
+            Up,
+            Down,
+            Left,
+            Right
+        }
+        let dir: Direction = Direction.Left;
+    Any:
+        The value can be any type
+        let unknown_value: any = "I can be everything";
+    Void:
+        When a function returns nothing
+        function log(): void {
+            console.log('Hello');
+        }
+    Null, Undefined:
+        let absent: null = null;
+        let not_defined: undefined = undefined;
+
+Advanced types:
+    Union Type: 
+        Allows to assign multiple type to a var
+        let mix: string | number | boolean;
+        mix = 12;
+        mix = 'Hello';
+        mix = true;
+    Intersection types:
+        Combine types to create a new type that have the property of both
+        type Employee = BusinessPartner & Identity
+    Type Aliases:
+        Assign a name to an already existing type. Perfect to make easier to read complex types.
+        type alphanumeric = string | number;
+        let input: alphanumeric;
+    Literal Types:
+        Restrict to a more specific types
+        for example click_event can only be a string "click" or "dbclick"
+        let click_event: "click" | "dbclick"
+    Type Guards:
+        Are function that make a control type at runtime. Ex isNumber function
+    Nullable Types:
+        We can say a var can also be null, like we have see in Union Type
+        let x: number | null = null;
+    Types Assertions:
+        Helps us to tells to typescript a var type if we are sure of a type but TS not, for example when we take an element from the DOM
+    Generics:
+        Allows us to create components that can work with any type
