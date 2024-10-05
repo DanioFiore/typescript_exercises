@@ -164,3 +164,14 @@ interface NumberArray {
 
 let myArray: NumberArray = [1, 2, 3, 4];
 console.log(myArray[0]); // Output: 1
+
+// we can declare two interfaces with the same name but different properties, but when we declare a variable that has this interface, we must provide all properties
+interface Box {
+    height: number;
+}
+
+interface Box {
+    width: number;
+}
+
+let box: Box = { height: 10, width: 5 };
