@@ -60,3 +60,12 @@ Advanced types:
         Helps us to tells to typescript a var type if we are sure of a type but TS not, for example when we take an element from the DOM
     Generics:
         Allows us to create components that can work with any type
+
+Polymorphism: 
+    Polymorphism in programming allows objects of different types to be treated as if they were the same type, typically through a common interface or superclass. It enables a single function, method, or operator to work in different ways depending on the context or the data it operates on.
+
+    There are two main types of polymorphism:
+
+    Compile-time (static) polymorphism: Achieved through method overloading or operator overloading. This happens when the same function name can have different versions depending on parameters (e.g., functions with the same name but different argument types).
+
+    Run-time (dynamic) polymorphism: Achieved through inheritance and interfaces, where a subclass can override a method of the parent class, and the appropriate method is called based on the object's type at runtime.
