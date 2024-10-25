@@ -69,3 +69,18 @@ Polymorphism:
     Compile-time (static) polymorphism: Achieved through method overloading or operator overloading. This happens when the same function name can have different versions depending on parameters (e.g., functions with the same name but different argument types).
 
     Run-time (dynamic) polymorphism: Achieved through inheritance and interfaces, where a subclass can override a method of the parent class, and the appropriate method is called based on the object's type at runtime.
+
+Decorators:
+    Experimental functionality of TS that allows us to annotate and edit class and property directly in the code declaration. They are using principally in the metaprogramming.
+    Use cases:
+        - logging and debugging, for example, to register automatically method calls
+        - validation
+        - dependency injection, in framework like angular, decorators make easier dependency injection
+        - mapping and serialization, automatize mapping between object and their serialization in json
+    Limitations:
+        - standardization: decorators are not standardized in ecmascript and there can be compatibility problem
+        - complexity and performance, use a lot of decorator can be based
+        - tech limitation, not every type of decorators are supported in every context
+
+Metaprogramming: 
+    Programming programs. It's a tecnique where a program can use other programs like his data. So the program can use, analyze other programs data.
