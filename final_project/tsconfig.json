@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "es2015"], // we want to support modern JavaScript features like promises and async/await
+        "module": "ESNext", // use ESNext module syntax for the imports
+        "strict": true,
+        "esModuleInterop": true, // enable interoperability between CommonJS and ES modules
+        "sourceMap": true,
+        "outDir": "./dist" // output directory for compiled JavaScript
+    },
+    "include": ["src/**/*"], // include all files in the src directory
+}

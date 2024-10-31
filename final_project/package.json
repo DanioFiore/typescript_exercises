@@ -1,0 +1,19 @@
+{
+  "name": "typescript-course-final-project",
+  "version": "1.0.0",
+  "description": "Typescript course final project, meteo app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "license": "ICS",
+  "author": "",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.1",
+    "rollup": "^4.24.3",
+    "tslib": "^2.8.0",
+    "typescript": "^5.6.3"
+  }
+}
