@@ -84,3 +84,12 @@ Decorators:
 
 Metaprogramming: 
     Programming programs. It's a tecnique where a program can use other programs like his data. So the program can use, analyze other programs data.
+
+Design patterns:
+    Factory Pattern: 
+        The Factory Pattern is a creational design pattern that provides an interface for creating objects in a superclass, allowing subclasses to change the type of objects created.
+        This pattern is useful when a system needs to be independent of the creation, composition, or representation of the objects it generates.
+        For example, in a document management app that supports different file types (e.g., text documents, spreadsheets, presentations), each type requires a specific viewer. By using the Factory Pattern, you can abstract the viewer creation process, making it easy to add support for new file types without changing client code. (example in design_patterns.ts)
+    Singleton Pattern:
+        The Singleton Pattern ensures a class has only one instance and provides a global access point to it. In TypeScript, this is implemented with a static property.
+        When to use it? This pattern is useful for accessing global configurations, like database strings, UI settings, or API parameters, that need to be consistent across an application. The Singleton Pattern provides a single access point to these settings, ensuring consistency and preventing errors.
