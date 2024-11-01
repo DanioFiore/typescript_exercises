@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/style.css">
+    <script src="dist/main.js" async></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <form class="city-search-form">
+                <div class="search-wrapper">
+                    <label for="city" class="visually-hidden">
+                        Select a city to see the weather
+                    </label>
+                    <!-- with autocomplete off, we disable the browser search history -->
+                    <input type="search" name="city" id="city" placeholder="Search the city" autocomplete="off">
+                    <button type="submit">Search</button>
+                </div>
+                <!-- with aria-live assertive we tells that its value will change dinamically -->
+                <ul class="search-results" aria-live="assertive"></ul>
+            </form>
+        </header>
+        <!-- aria label to make it accessible for screen readers -->
+        <section class="weather-card" aria-live="assertive" aria-label="Weather of the selected city">
+            <section class="weather-stats" aria-label="Live weather of the selected city ">
+                <p class="weather-main"></p>
+                <p class="weather-location"></p>
+                <p class="weather-temperature"></p>
+            </section>
+            <section class="weather-daily" aria-label="Weather of the next days in the selected city">
+                <ul>
+                    <li>
+                        <span class="day"></span>
+                        <span class="stats">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="day"></span>
+                        <span class="stats">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="day"></span>
+                        <span class="stats">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="day"></span>
+                        <span class="stats">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
